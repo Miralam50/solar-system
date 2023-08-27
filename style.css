@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.earth-orbit{
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    position: relative;
+    position: absolute;
+    animation: Round 4s infinite linear;
+}
+
+.earth {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: blue;
+    top: -35px;
+    left: -35px;
+}
+
+
+
+.mars-orbit{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    position: relative;
+    position: absolute;
+    animation: Round 3s infinite linear;
+}
+
+.mars {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: orangered;
+    top: -35px;
+    left: -35px;
+}
+
+.venus-orbit{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    position: relative;
+    position: absolute;
+    animation: Round 2s infinite linear;
+}
+
+.venus {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    top: -35px;
+    left: -35px;
+}
+
+.mercury-orbit {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: relative;
+    position: absolute;
+    animation: Round 3s infinite linear;
+    
+}
+
+.mercury {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute !important;
+    background-color: purple;
+    top: -25px;
+    left: -25px;   
+}
+
+.sun{
+    width: 120px;
+    height: 120px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 120px);
+    left: calc(50% - 120px);
+}
+
+.sun-orbit{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes Round {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
